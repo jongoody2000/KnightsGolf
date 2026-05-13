@@ -231,11 +231,10 @@ body{font-family:'Barlow',sans-serif;background:#f2f1ed;color:var(--text);line-h
 .site-footer{background:var(--blue);color:rgba(255,255,255,.7);text-align:center;padding:16px;font-size:12px;margin-top:40px;}
 .site-footer strong{color:#fff;}
 @media(max-width:700px){.hole-grid{grid-template-columns:1fr;}.score-grid{grid-template-columns:1fr 1fr;}}
-@media print{.site-header,.site-nav{display:none!important;}.drill-body{display:block!important;}}
-
 /* ── PRINT STYLES ── */
 @media print {
-  .site-header,.site-nav,.print-btn-wrap{display:none!important;}
+  .site-header,.site-nav{display:none!important;}
+  .print-btn-wrap{display:none!important;}
   .section-block{break-inside:avoid;border:1px solid #ccc;margin-bottom:16px;}
   .drill-body{display:block!important;}
   .div-body{display:block!important;}
@@ -245,7 +244,7 @@ body{font-family:'Barlow',sans-serif;background:#f2f1ed;color:var(--text);line-h
 }
 
 /* ── PRINT BUTTON ── */
-.print-btn-wrap{margin:8px 0 2px;display:flex;justify-content:flex-end;}
+.print-btn-wrap{margin:8px 0 4px;display:flex!important;justify-content:flex-end;}
 .print-btn{display:inline-flex;align-items:center;gap:6px;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#fff;color:var(--blue);border:1.5px solid var(--blue);border-radius:5px;padding:5px 12px;cursor:pointer;transition:all .15s;}
 .print-btn:hover{background:var(--blue);color:#fff;}
 .print-btn svg{width:14px;height:14px;flex-shrink:0;}
@@ -302,7 +301,7 @@ body{font-family:'Barlow',sans-serif;background:#f2f1ed;color:var(--text);line-h
 <div class="section-block" id="philosophy">
 <div class="section-header"><div class="section-num">1</div><div><div class="section-title">Team Practice &amp; Competition Philosophy</div><div class="section-subtitle">18 principles every Knight golfer lives by</div></div></div>
 <div class="section-body">
-<div class="print-btn-wrap"><button class="print-btn" onclick="printSection('philosophy','Philosophy')"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="12" height="9" rx="1"/><path d="M6 8V4h8v4"/><rect x="7" y="13" width="6" height="4"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/></svg>Print This Section</button></div>
+<div class="print-btn-wrap"><button class="print-btn" onclick="printSection('philosophy','Philosophy')" title="v2-print-enabled"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="12" height="9" rx="1"/><path d="M6 8V4h8v4"/><rect x="7" y="13" width="6" height="4"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/></svg>Print This Section</button></div>
 
 <ul class="phil-list">
 <li class="phil-item"><div class="phil-num">1</div><div class="phil-text"><strong>Playing Well does not equal Scoring Well.</strong> Knowing how to attack a course, playing smart, using low-risk / high-reward shots lets you score well even when ball-striking feels off.</div></li>
@@ -2305,8 +2304,7 @@ body{font-family:'Barlow',sans-serif;background:#f2f1ed;color:var(--text);line-h
 </div>
 <div style="font-size:13px;">All 19 players pitch once. <strong>Tiebreaker:</strong> One sudden-death player per team, 1 pitch each.</div>
 </div>
-<div class="pp-coach-note"><strong>Coach Goodness tip:</strong> Before the first player steps up, make the connection explicit: "This is the same Faldo rotation you just practiced — open face, hip through, trust the loft." The gym should be loud. Have the whole team gather courtside to watch each pitcher.</div>
-</div><!-- /pp-indoor-d1 -->
+<div class="pp-coach-note"><strong>Coach Goodness tip:</strong> Before the first player steps up, make the connection explicit: "This is the same Faldo rotation you just practiced — open face, hip through, trust the loft." The gym should be loud. Have the whole team gather courtside to watch each pitcher.</div><!-- /pp-indoor-d1 -->
 
 <!-- ========== INDOOR DAY 2 ========== -->
 <div class="pp-panel" id="pp-indoor-d2">
